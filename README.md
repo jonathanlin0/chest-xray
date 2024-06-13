@@ -1,4 +1,4 @@
-This repository holds the important files related to our group's work for the CS156b class. We ended up placing **_3rd place_** on the evaluation leaderboard (before the final presentation was given).
+This repository holds the important files related to our group's work for the CS156b class. We ended up getting **_3rd place_** on the evaluation leaderboard (before the final presentation was given).
 
 The challenge of the class was to classify 9 pathologies from given chest x-rays. We initially tried a multi-class classification approach, but found that having a single model for each pathology and view (lateral vs frontal), though inefficient, performed the best.
 
@@ -22,10 +22,12 @@ The file is called ``apply_spring.py`` because influencing the target pathology'
 
 `apply_spring.py` alters a given pathology's labels for the evaluation data based on labels of pathologies that are highly correlated with the target pathology.
 
+`/figs/corr.png` shows the correlation matrix based on the training data. Useful for `apply_spring.py`.
+
 
 ## Training data indices: <br>
-0 No finding <br>
-1 Enlarged car <br>
+0 no finding <br>
+1 enlarged cardiomediastinum <br>
 2 Cardiomegaly <br>
 3 Lung opacity <br>
 4 Pneumonia <br>
@@ -35,7 +37,7 @@ The file is called ``apply_spring.py`` because influencing the target pathology'
 8 Support devices <br>
 
 ## Test data indices:  <br>
-1 Enlarged Cardiomediastinum <br>
+1 enlarged cardiomediastinum <br>
 2 no finding <br>
 3 cardiomegaly <br>
 4 pleural effusion <br>
